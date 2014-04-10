@@ -1,0 +1,3 @@
+pocketsphinx-hmm-wsj1
+pocketsphinx-lm-wsj
+libasound-dev
