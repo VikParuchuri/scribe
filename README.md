@@ -1,12 +1,14 @@
 Scribe
 -------------------------------
 
-Simple speech recognition for Python.  Powered by [pyaudio](http://people.csail.mit.edu/hubert/pyaudio/) and [Sphinx](http://cmusphinx.sourceforge.net/).
+Simple speech recognition for Python.  Run the script, say some things into your microphone, and then see what you said (or an approximation).
+
+Powered by [pyaudio](http://people.csail.mit.edu/hubert/pyaudio/) and [Sphinx](http://cmusphinx.sourceforge.net/).
 
 Installation
 --------------------------------
 
-## Sphinxbase
+### Sphinxbase
 
 Download [sphinxbase](http://sourceforge.net/projects/cmusphinx/files/sphinxbase/0.8) and extract the files.
 
@@ -20,7 +22,7 @@ python setup.py install
 
 You may need to use sudo for make install or python setup.py install.
 
-## Pocketsphinx
+### Pocketsphinx
 
 Download [pocketsphinx](http://sourceforge.net/projects/cmusphinx/files/pocketsphinx/0.8) and extract the files.
 
@@ -32,7 +34,7 @@ cd python
 python setup.py install
 ```
 
-## Packages (Linux only)
+### Packages (Linux only)
 
 Now, run:
 
@@ -41,11 +43,11 @@ cd speech-recognizer
 sudo xargs -a apt-packages.txt apt-get install
 ```
 
-## Pyaudio
+### Pyaudio
 
 Now, download the right version of [pyaudio](http://people.csail.mit.edu/hubert/pyaudio/) and install it.
 
-## Language files
+### Language files
 
 If you want to speak english, you need to get the [english language model](http://sourceforge.net/projects/cmusphinx/files/Acoustic%20and%20Language%20Models/US%20English%20Generic%20Language%20Model/) and the [english acoustic model](http://sourceforge.net/projects/cmusphinx/files/Acoustic%20and%20Language%20Models/US%20English%20Generic%20Acoustic%20Model/).
 
@@ -88,6 +90,8 @@ To run, you just have to:
 cd speech-recognizer
 python recognizer.py
 ```
+
+You should be able to talk for a few seconds, after which it will spend some time processing, and the show you what you said.
 
 Configure
 ---------------------------------
